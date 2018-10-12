@@ -4,7 +4,7 @@ import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import FriendCard from "./components/FriendCard";
 import friends from "./friends.json";
-// import Nav from "./components/Nav";
+import Navbar from "./components/Navbar";
 // import Container from "./Container";
 // import Row from "./Row";
 // import Column from "./Column";
@@ -69,12 +69,12 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        {/* <Nav
-          title="Game"
+        <Navbar
+          title="Marvel Game"
           score={this.state.currentScore}
           topScore={this.state.topScore}
           rightWrong={this.state.rightWrong}
-        /> */}
+        />
 
         <Title>
       Click on an image to earn points and win, but dont click on an image more than once or lose!!!
@@ -83,17 +83,17 @@ class App extends Component {
         {/* <Container>
           <Row>
             {this.state.friends.map(friend => (
-              <Column size="md-3 sm-6">
+              <Column size="md-3 sm-6"> */}
                 <FriendCard
-                  key={friend.id}
+                  key={friends.id}
                   handleClick={this.handleClick}
                   handleIncrement={this.handleIncrement}
                   handleReset={this.handleReset}
                   handleShuffle={this.handleShuffle}
-                  id={friend.id}
-                  image={friend.image}
+                  id={friends.id}
+                  image={friends.image}
                 />
-              </Column>
+              {/* </Column>
             ))}
           </Row>
         </Container> */}
