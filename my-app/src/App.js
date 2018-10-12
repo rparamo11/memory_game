@@ -6,8 +6,8 @@ import FriendCard from "./components/FriendCard";
 import friends from "./friends.json";
 import Navbar from "./components/Navbar";
 import Column from "./Column";
-// import Container from "./Container";
-// import Row from "./Row";
+import Container from "./Container";
+import Row from "./Row";
 
 function shuffleFriends(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -82,9 +82,9 @@ class App extends Component {
       Click on an image to earn points and win, but dont click on an image more than once or lose!!!
        </Title>
 
-        {/* <Container>
-          <Row> */}
-            {this.state.friends.map(friend => (
+        <Container>
+          <Row>
+            {this.state.friends.map(friends => (
               <Column size="md-3 sm-6">
                 <FriendCard
                   key={friends.id}
@@ -97,8 +97,8 @@ class App extends Component {
                 />
               </Column>
             ))}
-          {/* </Row>
-        </Container> */}
+          </Row>
+        </Container>
       </Wrapper>
     );
   }
