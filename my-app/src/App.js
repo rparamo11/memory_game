@@ -57,7 +57,7 @@ class App extends Component {
     this.setState({
       currentScore: 0,
       topScore: this.state.topScore,
-      rightWrong: "Sorry!",
+      rightWrong: "Sorry Try Again!",
       clicked: []
     });
     this.handleShuffle();
@@ -79,7 +79,7 @@ class App extends Component {
         />
 
         <Title>
-      Click on an image to earn points and win, but dont click on an image more than once or lose!!!
+      Click on the images to win, but dont click on an image more than once or lose!
        </Title>
 
         <Container>
