@@ -8,14 +8,14 @@ nav {
     font-family: 'Marvel', cursive;
   }
   
-  a {
+  /* a {
     color: #fed420;
   }
   
   a:hover {
     color: #fed420;
     text-decoration: none;
-  }
+  } */
   
   nav li {
     display: inline-block;
