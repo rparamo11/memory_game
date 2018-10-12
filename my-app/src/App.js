@@ -5,9 +5,9 @@ import Title from "./components/Title";
 import FriendCard from "./components/FriendCard";
 import friends from "./friends.json";
 import Navbar from "./components/Navbar";
+import Column from "./Column";
 // import Container from "./Container";
 // import Row from "./Row";
-// import Column from "./Column";
 
 function shuffleFriends(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -36,6 +36,7 @@ class App extends Component {
     }
   };
 
+  // adds to the score
   handleIncrement = () => {
     const newScore = this.state.currentScore + 1;
     this.setState({
@@ -51,6 +52,7 @@ class App extends Component {
     this.handleShuffle();
   };
 
+  // players loses and resets
   handleReset = () => {
     this.setState({
       currentScore: 0,
@@ -81,9 +83,9 @@ class App extends Component {
        </Title>
 
         {/* <Container>
-          <Row>
+          <Row> */}
             {this.state.friends.map(friend => (
-              <Column size="md-3 sm-6"> */}
+              <Column size="md-3 sm-6">
                 <FriendCard
                   key={friends.id}
                   handleClick={this.handleClick}
@@ -93,9 +95,9 @@ class App extends Component {
                   id={friends.id}
                   image={friends.image}
                 />
-              {/* </Column>
+              </Column>
             ))}
-          </Row>
+          {/* </Row>
         </Container> */}
       </Wrapper>
     );
