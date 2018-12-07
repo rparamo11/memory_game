@@ -8,3 +8,11 @@ If you lose, you will see a message stating "Sorry Try Again!".
 ## Get Started 
 https://rparamo11.github.io/memory_game/
 
+![Screen shot](/images/image_1.png)
+
+![Screen shot](/images/image_2.png)
+
+## Technologies Used
+- React
+- JavaScript
+- NodeJS
